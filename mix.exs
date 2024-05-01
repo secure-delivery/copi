@@ -52,6 +52,9 @@ defmodule Copi.MixProject do
       {:slugify, "~> 1.3.1"},
       {:want, "~> 1.9"},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      {:sobelow, "~> 0.13", only: [:dev, :test], runtime: false},
+      {:doctor, "~> 0.21.0", only: :dev},
+      {:git_hooks, "~> 0.7.0", only: [:dev], runtime: false}
     ]
   end
 
