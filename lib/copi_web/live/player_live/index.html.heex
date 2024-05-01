@@ -1,5 +1,5 @@
 <%= if @live_action in [:new, :edit] do %>
-  <%= live_modal @socket, CopiWeb.PlayerLive.FormComponent,
+  <%= live_modal CopiWeb.PlayerLive.FormComponent,
     id: @player.id || :new,
     title: @page_title,
     action: @live_action,

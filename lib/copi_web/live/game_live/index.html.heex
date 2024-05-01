@@ -3,7 +3,7 @@
 <span><%= live_patch gettext("Enough already, let's start!"), to: Routes.game_index_path(@socket, :new), class: "button" %></span>
 
 <%= if @live_action in [:new, :edit] do %>
-  <%= live_modal @socket, CopiWeb.GameLive.FormComponent,
+  <%= live_modal CopiWeb.GameLive.FormComponent,
     id: @game.id || :new,
     title: @page_title,
     action: @live_action,
