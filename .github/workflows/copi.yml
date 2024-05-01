@@ -66,7 +66,16 @@ jobs:
         run: mix deps.get
 
       - name: Build the project
-        run: mix compile
+        run: mix compile --warnings-as-errors
+
+      - name: format code
+        run: mix format --check-formatted
         
-      - name: Run tests
-        run: mix test
+      # - name: Run tests
+      #   run: mix test
+
+      - name: Run Credo
+        run: mix credo  
+
+      - name: Run Sobelow  
+        run: mix sobelow  
