@@ -18,6 +18,5 @@ defmodule Copi.Repo.Migrations.CreateCards do
 
       timestamps()
     end
-
   end
 end

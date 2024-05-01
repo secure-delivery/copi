@@ -6,8 +6,18 @@ defmodule Copi.CornucopiaTest do
   describe "games" do
     alias Copi.Cornucopia.Game
 
-    @valid_attrs %{created_at: "2010-04-17T14:00:00Z", finished_at: "2010-04-17T14:00:00Z", name: "some name", started_at: "2010-04-17T14:00:00Z"}
-    @update_attrs %{created_at: "2011-05-18T15:01:01Z", finished_at: "2011-05-18T15:01:01Z", name: "some updated name", started_at: "2011-05-18T15:01:01Z"}
+    @valid_attrs %{
+      created_at: "2010-04-17T14:00:00Z",
+      finished_at: "2010-04-17T14:00:00Z",
+      name: "some name",
+      started_at: "2010-04-17T14:00:00Z"
+    }
+    @update_attrs %{
+      created_at: "2011-05-18T15:01:01Z",
+      finished_at: "2011-05-18T15:01:01Z",
+      name: "some updated name",
+      started_at: "2011-05-18T15:01:01Z"
+    }
     @invalid_attrs %{created_at: nil, finished_at: nil, name: nil, started_at: nil}
 
     def game_fixture(attrs \\ %{}) do
@@ -130,9 +140,48 @@ defmodule Copi.CornucopiaTest do
   describe "cards" do
     alias Copi.Cornucopia.Card
 
-    @valid_attrs %{capec: [], category: "some category", description: "some description", edition: "some edition", language: "some language", misc: "some misc", owasp_appsensor: [], owasp_asvs: [], owasp_scp: [], safecode: [], value: "some value", version: "some version"}
-    @update_attrs %{capec: [], category: "some updated category", description: "some updated description", edition: "some updated edition", language: "some updated language", misc: "some updated misc", owasp_appsensor: [], owasp_asvs: [], owasp_scp: [], safecode: [], value: "some updated value", version: "some updated version"}
-    @invalid_attrs %{capec: nil, category: nil, description: nil, edition: nil, language: nil, misc: nil, owasp_appsensor: nil, owasp_asvs: nil, owasp_scp: nil, safecode: nil, value: nil, version: nil}
+    @valid_attrs %{
+      capec: [],
+      category: "some category",
+      description: "some description",
+      edition: "some edition",
+      language: "some language",
+      misc: "some misc",
+      owasp_appsensor: [],
+      owasp_asvs: [],
+      owasp_scp: [],
+      safecode: [],
+      value: "some value",
+      version: "some version"
+    }
+    @update_attrs %{
+      capec: [],
+      category: "some updated category",
+      description: "some updated description",
+      edition: "some updated edition",
+      language: "some updated language",
+      misc: "some updated misc",
+      owasp_appsensor: [],
+      owasp_asvs: [],
+      owasp_scp: [],
+      safecode: [],
+      value: "some updated value",
+      version: "some updated version"
+    }
+    @invalid_attrs %{
+      capec: nil,
+      category: nil,
+      description: nil,
+      edition: nil,
+      language: nil,
+      misc: nil,
+      owasp_appsensor: nil,
+      owasp_asvs: nil,
+      owasp_scp: nil,
+      safecode: nil,
+      value: nil,
+      version: nil
+    }
 
     def card_fixture(attrs \\ %{}) do
       {:ok, card} =

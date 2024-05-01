@@ -8,6 +8,7 @@ defmodule Copi.CardMigration do
         edition = cards["meta"]["edition"]
         language = cards["meta"]["language"]
         version = cards["meta"]["version"]
+
         for suit <- cards["suits"] do
           for card <- suit["cards"] do
             this_card = Repo.get_by(Card, category: suit["name"], value: card["value"])
@@ -32,8 +33,7 @@ defmodule Copi.CardMigration do
     end
   end
 
-
-  def update_card(card)do
+  def update_card(card) do
     card
     |> Ecto.Changeset.change(external_id: card["id"])
     |> Repo.update()
@@ -55,7 +55,7 @@ defmodule Copi.CardMigration do
                 safecode: Enum.map(card["safecode"], fn x -> to_string(x) end)
               )
 
-            Repo.update this_card
+            Repo.update(this_card)
           end
         end
     end
