@@ -6,7 +6,7 @@ meta:
   version: "2.00"
 suits:
 -
-  name: "DATA VALIDATION & ENCODING"
+  name: "Data Validation & Encoding"
   cards:
   -
     id: "DV2"
@@ -62,7 +62,7 @@ suits:
     desc: "You have invented a new attack against Data Validation and Encoding"
     misc: "Read more about this topic in OWASP's free Cheat Sheets on Input Validation, XSS Prevention, DOM-based XSS Prevention, SQL Injection Prevention, and Query Parameterization"
 -
-  name: "AUTHENTICATION"
+  name: "Authentication"
   cards:
   -
     id: "AC2"
@@ -118,7 +118,7 @@ suits:
     desc: "You have invented a new attack against Authentication"
     misc: "Read more about this topic in OWASP's free Authentication Cheat Sheet"
 -
-  name: "SESSION MANAGEMENT"
+  name: "Session Management"
   cards:
   -
     id: "SM2"
@@ -174,7 +174,7 @@ suits:
     desc: "You have invented a new attack against Session Management"
     misc: "Read more about this topic in OWASP's free Cheat Sheets on Session Management, and Cross Site Request Forgery (CSRF) Prevention"
 -
-  name: "AUTHORIZATION"
+  name: "Authorization"
   cards:
   -
     id: "AZ2"
@@ -230,7 +230,7 @@ suits:
     desc: "You have invented a new attack against Authorization"
     misc: "Read more about this topic in OWASP's Development and Testing Guides"
 -
-  name: "CRYPTOGRAPHY"
+  name: "Cryptography"
   cards:
   -
     id: "CR2"
@@ -286,7 +286,7 @@ suits:
     desc: "You have invented a new attack against Cryptography"
     misc: "Read more about this topic in OWASP's free Cheat Sheets on Cryptographic Storage, and Transport Layer Protection"
 -
-  name: "CORNUCOPIA"
+  name: "Cornucopia"
   cards:
   -
     id: "CO2"
@@ -342,7 +342,7 @@ suits:
     desc: "You have invented a new attack of any type"
     misc: "Read more about application security in OWASP's free Guides on Requirements, Development, Code Review and Testing, the Cheat Sheet series, and the Open Software Assurance Maturity Model"
 -
-  name: "WILD CARD"
+  name: "Wild Card"
   cards:
   -
     id: "JOA"
