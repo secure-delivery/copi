@@ -51,7 +51,7 @@ defmodule Copi.CardMigration do
             this_card = Repo.get_by!(Card, category: suit["name"], value: card["value"], edition: edition)
 
             this_card =  case edition do
-             "ecommerce" -> Ecto.Changeset.change(this_card,
+              "webapp" -> Ecto.Changeset.change(this_card,
                   owasp_scp: set_mappings_for_card(card["owasp_scp"]),
                   owasp_asvs: set_mappings_for_card(card["owasp_asvs"]),
                   owasp_masvs: [],
@@ -60,7 +60,7 @@ defmodule Copi.CardMigration do
                   capec: set_mappings_for_card(card["capec"]),
                   safecode: set_mappings_for_card(card["safecode"])
                 )
-                "masvs" -> Ecto.Changeset.change(this_card,
+              "mobileapp" -> Ecto.Changeset.change(this_card,
                 owasp_scp: [],
                 owasp_asvs: [],
                 owasp_masvs: set_mappings_for_card(card["owasp_masvs"]),

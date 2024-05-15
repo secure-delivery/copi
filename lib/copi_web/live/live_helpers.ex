@@ -24,8 +24,8 @@ defmodule CopiWeb.LiveHelpers do
 
     def display_game_session(edition) do
       case edition do
-        "ecommerce" -> "Web Session:"
-        "masvs" -> "Mobile Session:"
+        "webapp" -> "Web Session:"
+        "mobileapp" -> "Mobile Session:"
         _ -> "EoP Session:"
       end
   end
